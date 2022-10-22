@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+#part1 h1, #part1 p {
+  color: white;
+}
+#part1 p {
+  opacity: 90%;
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+#part2 h2 {
+  color: white;
+  background: hsl(248, 32%, 49%);
+  border-radius: 6px;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.12);
+  font-size: 0.85rem;
+  font-weight: 300;
+  margin-bottom: 0.85rem;
+  text-align: center;
+}
+h2 span {
+  font-weight: 600;
+}
+#part2 form {
+  border-radius: 6px;
+  background: white;
+  box-shadow: 0 5px 0px rgba(0, 0, 0, 0.12);
+}
+.ara {
+  position: relative;
+}
+.ara img, .ara .alert {
+  display: none;
+}
+.ara img {
+  width: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+}
+.alert {
+  color: hsl(0, 100%, 74%);
+  font-size: 0.6rem;
+  text-align: right;
+  font-style: italic;
+  margin: -5px 0 10px 0;
+  font-weight: 500;
+}
+input {
+  display: block;
+  width: 100%;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+input:focus {
+  border: 1px solid hsl(249, 10%, 26%);
+  outline: none;
+}
+::-webkit-input-placeholder {
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  opacity: 70%;
+}
+:-ms-input-placeholder {
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  opacity: 70%;
+}
+::placeholder {
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  opacity: 70%;
+}
+#part2 button {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background: hsl(154, 59%, 51%);
+  box-shadow: 0 5px 0px hsl(154, 55%, 39%);
+  margin-bottom: 15px;
+}
+#part2 .agreement {
+  color: hsl(246, 25%, 77%);
+  font-weight: 400;
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 0 1rem;
+}
+#part2 .agreement span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+@media only screen and (min-width:900px) {
+  body {
+    background:hsl(0, 100%, 74%) url('images/bg-intro-desktop.png') no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+  main {
+    width: 100%;
+    max-width: 1440px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 6em;
+  }
+  #part1, #part2 {
+    width: 45%;
+  }
+  #part1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #part1 h1 {
+    margin-bottom: 1em;
+    width: 80%;
+  }
+  #part2 h2 {
+    padding: 0.7rem;
+  }
+  #part2 form {
+    padding: 1.7rem;
+  }
+  #part2 input {
+    padding: 0.8rem 1.2rem;
+  }
+  #part2 button {
+    padding: 0.8rem 1.2rem;
+  }
+}
+@media only screen and (min-width:700px) and (max-width:900px) {
+    body {
+        background:hsl(0, 100%, 74%) url('images/bg-intro-desktop.png') no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+      }
+      main {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+      }
+      #part1, #part2 {
+        width: 45%;
+      }
+      #part1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      #part1 h1 {
+        margin-bottom: 1em;
+        width: 80%;
+      }
+      #part2 h2 {
+        padding: 0.7rem;
+      }
+      #part2 form {
+        padding: 1.7rem;
+      }
+      #part2 input {
+        padding: 0.8rem 1.2rem;
+      }
+      #part2 button {
+        padding: 0.8rem 1.2rem;
+      }
+}
+@media only screen and (max-width:699px) {
+    body {
+        background:hsl(0, 100%, 74%) url('images/bg-intro-mobile.png') no-repeat;
+        background-size: cover;
+        /*width: 100vw;*/
+      }
+      main {
+        margin: 0 auto;
+        min-width: 300px;
+        max-width: 400px;
+        padding: 0 5%;
+      }
+      #part1, #part2 {
+        width: 100%;
+      }
+      #part1 {
+        padding: 3rem 0;
+      }
+      #part1 h1 {
+        margin-bottom: 1em;
+        width: 100%;
+        text-align: center;
+      }
+      #part1 p {
+        text-align: center;
+      }
+      #part2 {
+        padding-bottom: 3rem;
+      }
+      #part2 h2 {
+        padding: 0.7rem 10%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      #part2 form {
+        padding: 1.4rem;
+      }
+      #part2 input {
+        padding: 0.8rem 1.2rem;
+      }
+      #part2 button {
+        padding: 0.8rem 1.2rem;
+      }   
+}
+
+
+
